@@ -1,0 +1,32 @@
+$nav-height: 100px;
+$grid-gap-value:10px;
+$columns-value: calc(50% - calc(#{$grid-gap-value} / 2));
+
+.nav-bar {
+  background: aqua;
+  width: 100%;
+  height: $nav-height;
+}
+
+.app-container {
+  background: cadetblue;
+  width: 100%;
+  height: calc(100vh - #{$nav-height});
+  display: grid;
+  grid-gap: $grid-gap-value;
+  grid-template-columns: $columns-value $columns-value;
+}
+
+.container-actions {
+  background: bisque;
+  width: 100%;
+}
+
+.container-resources {
+  background: darkolivegreen;
+  width: 100%;
+  overflow:auto;
+  height: 100%;
+  box-sizing: border-box;
+  border: 3px solid black;;
+}

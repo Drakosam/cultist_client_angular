@@ -1,0 +1,6 @@
+<ng-container *ngIf="startApp; else letsPlay">
+  <app-main-view></app-main-view>
+
+</ng-container>
+
+<ng-template #letsPlay><app-notready></app-notready></ng-template>
